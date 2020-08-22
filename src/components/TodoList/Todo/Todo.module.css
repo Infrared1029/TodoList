@@ -6,7 +6,7 @@
     margin: 20px 20px;
     /* background-image: linear-gradient(rgb(250, 224, 175), orange); */
     background-color: white;
-    transition: transform 0.4s;
+    transition: transform 0.4s, background-color 0.5s ;
 }
 
 .container:hover{
@@ -24,6 +24,7 @@
 .container p{
     font-size: 24px;
     letter-spacing: 1px;
+    font-weight: 800;
 }
 
 .container button{
@@ -51,7 +52,8 @@
 }
 
 .checked {
-    background-image: linear-gradient(white, rgb(142, 221, 142));
+    /* background-image: linear-gradient(white, rgb(142, 221, 142)); */
+    background-color: rgba(83, 247, 83, 0.534);
     border: 3px solid lightgreen;
 }
 
