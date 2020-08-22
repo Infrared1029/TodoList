@@ -19,12 +19,17 @@
     height: 25px;
 }
 
+.container input:hover{
+    cursor: pointer;
+}
+
 
 
 .container p{
     font-size: 24px;
     letter-spacing: 1px;
     font-weight: 800;
+    
 }
 
 .container button{
