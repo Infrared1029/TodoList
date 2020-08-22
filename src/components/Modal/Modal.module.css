@@ -5,7 +5,7 @@
     width: 35%;
     height: 45%;
     background-color: #FFA355;
-    z-index: 300;
+    z-index: 500;
     padding: 50px 20px;
     border-radius: 10px;
 }
@@ -32,9 +32,11 @@
     padding: 10px;
     margin-top: 10px;
     color: white;
+    transition: background-color 0.5s, transform 0.5s;
 }
 
 .modal button:hover{
-    background-color: #f5995c;
+    background-color: #f87722;
     cursor: pointer;
+    transform: scale(1.1);
 }

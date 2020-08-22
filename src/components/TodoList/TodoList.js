@@ -6,7 +6,7 @@ import Todo from './Todo/Todo';
 
 const todoList = (props) => (
 
-    <div>
+    <div style={{marginTop: '10%'}}>
         {props.todoList.map(todo => <Todo text={todo.text} checked={todo.checked} key={todo.id} id={todo.id}></Todo>)}
     </div>
 

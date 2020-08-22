@@ -16,15 +16,15 @@ class App extends React.Component {
 render(){
 
 
-let todoList = this.props.todoList.length? <TodoList/>: <h1 style={{marginLeft: '5%'}}>Start creating your Todo List!</h1>;
+let todoList = this.props.todoList.length? <TodoList/>: <h1 style={{marginLeft: '5%', marginTop: '10%'}}>Start creating your Todo List!</h1>;
 
 
   return (
-    <div>
-      {this.props.createTodo? <React.Fragment> <BackDrop/><Modal/> </React.Fragment>:null}
+    <React.Fragment>
       <Layout/>
+      {this.props.createTodo? <React.Fragment> <BackDrop/><Modal/></React.Fragment>:null}
      {todoList}
-    </div>
+    </React.Fragment>
   );
 }
 
