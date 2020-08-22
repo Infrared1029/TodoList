@@ -1,0 +1,56 @@
+.container{
+    width: 70%;
+    border: solid 3px rgb(255, 210, 10);
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    /* background-image: linear-gradient(rgb(250, 224, 175), orange); */
+    background-color: white;
+    transition: transform 0.4s;
+}
+
+.container:hover{
+    transform: scale(1.03);
+}
+
+
+.container input{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.container p{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.container button{
+    /* position: relative; */
+    display: inline-block;
+    /* left: 90%;
+    top: 0; */
+    background-color: white;
+    border: 1px solid rgb(250, 120, 120);
+    color: red;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    padding-top: 5px;
+    margin-left: 90%;
+}
+
+
+.container button:hover{
+    background-color: rgb(253, 70, 70);
+    color: white;
+    cursor: pointer;
+}
+
+.checked {
+    background-image: linear-gradient(white, rgb(142, 221, 142));
+    border: 3px solid lightgreen;
+}
+

@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { connect } from 'react-redux';
 
-function App() {
+
+import TodoList from './components/TodoList/TodoList';
+import Layout from './components/Layout/Layout';
+import BackDrop from './components/BackDrop/BackDrop';
+import Modal from './components/Modal/Modal';
+
+
+class App extends React.Component {
+
+
+
+
+render(){
+
+
+let todoList = this.props.todoList.length? <TodoList/>: <h1 style={{marginLeft: '5%'}}>Start creating your Todo List!</h1>;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {this.props.createTodo? <React.Fragment> <BackDrop/><Modal/> </React.Fragment>:null}
+      <Layout/>
+     {todoList}
     </div>
   );
 }
 
-export default App;
+}
+
+
+const mapStateToProps = state => {
+  return {
+    todoList: state.todoList,
+    createTodo: state.createTodo,
+  }
+}
+
+
+export default connect(mapStateToProps)(App);

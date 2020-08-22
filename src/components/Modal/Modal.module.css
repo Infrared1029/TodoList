@@ -1,0 +1,40 @@
+.modal{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 35%;
+    height: 45%;
+    background-color: #FFA355;
+    z-index: 300;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+
+.modal textarea{
+    display: block;
+    resize: none;
+    width: 95%;
+    height: 70%;
+    color: #E86143;
+    font-size: 22px;
+    background-color: #F9C75E;
+    font-weight: 800;
+
+}
+
+
+.modal button{
+    display: block;
+    background-color: #FF8838;
+    border: 1px solid #FF8838;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.modal button:hover{
+    background-color: #f5995c;
+    cursor: pointer;
+}
